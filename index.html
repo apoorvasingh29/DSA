@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack and Queue Explanation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stack and Queue in Data Structures</h1>
+    </header>
+
+    <section>
+        <h2>1. Stack</h2>
+        <p><strong>Definition</strong>: A stack is a linear data structure that follows the <strong>Last In, First Out (LIFO)</strong> principle. This means that the last element added to the stack is the first one to be removed.</p>
+        
+        <h3>Operations:</h3>
+        <ul>
+            <li><strong>Push</strong>: Add an element to the top of the stack.</li>
+            <li><strong>Pop</strong>: Remove and return the element from the top of the stack.</li>
+            <li><strong>Peek</strong>: View the top element of the stack without removing it.</li>
+            <li><strong>isEmpty</strong>: Check if the stack is empty.</li>
+        </ul>
+
+        <h3>Analogy:</h3>
+        <p>Imagine a stack of plates. You place one plate on top of the other. To access the first plate you placed, you need to remove all the plates above it. The last plate you placed on the stack is the first to be removed.</p>
+
+        <h3>Example Use Case:</h3>
+        <p>Undo Operations: In applications like text editors, the stack can be used to implement undo functionality by storing the most recent actions on top.</p>
+
+        <h3>Illustration:</h3>
+        <pre><code>Stack (LIFO):
+---------
+|   3   |
+---------
+|   2   |
+---------
+|   1   |
+---------
+
+Push(4) => New Stack:
+---------
+|   4   |
+---------
+|   3   |
+---------
+|   2   |
+---------
+|   1   |
+---------</code></pre>
+    </section>
+
+    <section>
+        <h2>2. Queue</h2>
+        <p><strong>Definition</strong>: A queue is a linear data structure that follows the <strong>First In, First Out (FIFO)</strong> principle. This means that the first element added to the queue is the first one to be removed.</p>
+        
+        <h3>Operations:</h3>
+        <ul>
+            <li><strong>Enqueue</strong>: Add an element to the rear (end) of the queue.</li>
+            <li><strong>Dequeue</strong>: Remove and return the element from the front of the queue.</li>
+            <li><strong>Peek</strong>: View the element at the front of the queue without removing it.</li>
+            <li><strong>isEmpty</strong>: Check if the queue is empty.</li>
+        </ul>
+
+        <h3>Analogy:</h3>
+        <p>Think of a queue as a line of people waiting to get into a movie theater. The first person in line is the first one to get a ticket and enter the theater. New people join at the end of the line.</p>
+
+        <h3>Example Use Case:</h3>
+        <p>Print Queue: Printers often use a queue to handle print jobs, where the first document sent to the printer is the first one printed.</p>
+
+        <h3>Illustration:</h3>
+        <pre><code>Queue (FIFO):
+Front -> | 1 | 2 | 3 | <- Rear
+
+Enqueue(4) => New Queue:
+Front -> | 1 | 2 | 3 | 4 | <- Rear
+
+Dequeue() => Front -> | 2 | 3 | 4 | <- Rear</code></pre>
+    </section>
+
+    <section>
+        <h2>Key Differences:</h2>
+        <ul>
+            <li><strong>Order of Operations</strong>:
+                <ul>
+                    <li><strong>Stack</strong>: Last In, First Out (LIFO).</li>
+                    <li><strong>Queue</strong>: First In, First Out (FIFO).</li>
+                </ul>
+            </li>
+            <li><strong>Usage</strong>:
+                <ul>
+                    <li><strong>Stack</strong>: Useful in scenarios where the most recent data needs to be accessed first (e.g., undo operations, parsing expressions).</li>
+                    <li><strong>Queue</strong>: Useful in scenarios where the earliest data needs to be processed first (e.g., task scheduling, handling requests in web servers).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stack and Queue Tutorial || Developed By Apoorva Singh</p>
+    </footer>
+</body>
+</html>
